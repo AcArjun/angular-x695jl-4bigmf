@@ -1,0 +1,9 @@
+<h2>Cart Details</h2>
+  <div class="cart-item" *ngFor="let item of cartItems">
+    <span>{{item.name}}</span>
+    <span>{{item.price | currency}}</span>
+
+  </div>
+<h2>Shipping charges</h2>
+<app-shipping-detail></app-shipping-detail>
+<button (click)="userData()">Next</button>
